@@ -4,3 +4,8 @@ RGB Hex,RGB Hex3,HSL,RGB,HTML Keyword
 #dee58d,#ee9,"hsl(64,62,72)","rgb(222,229,141)",khaki
 #ebb3b8,#fbc,"hsl(354,58,81)","rgb(235,179,184)",lightpink
 #ef7987,#f88,"hsl(352,78,70)","rgb(239,121,135)",lightcoral
+#a67c52,#a85,"hsl(29,33,48)","rgb(166,124,82)",peru
+#8c6239,#964,"hsl(29,42,38)","rgb(140,98,57)",sienna
+#ffffff,#fff,"hsl(0,0,100)","rgb(255,255,255)",white
+#4e5d32,#563,"hsl(80,30,28)","rgb(78,93,50)",darkolivegreen
+#829663,#896,"hsl(83,20,48)","rgb(130,150,99)",gray

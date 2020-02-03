@@ -1,71 +1,78 @@
 // Navigation Styles here
 
-
 //mix-ins
 
 //parametric mix-ins
 
 //escapes
-
-
-header {
-    border-bottom: 2px dashed @navigation-border;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
-    // align-items: center;
   
-    //@mobile is calling the escape created in the variables folder
-    @media @mobile{
-      flex-direction: column;
-      align-items: center;
-        // justify-content: space-between;
-    }//media can change styles depending on what's needed. media closing tag for header 
+    // //@mobile is calling the escape created in the variables folder
+    // @media @mobile{
+    //   flex-direction: column;
+    //   align-items: center;
+    //     // justify-content: space-between;
+    // //media can change styles depending on what's needed. media closing tag for header 
   
-    h1 {
-      font-size: 4rem;
-      color: @shark;
-      padding-left: 22%;
+    
       
-      //@mobile is calling the escape created in the variables folder 
+    //   //@mobile is calling the escape created in the variables folder 
   
-      @media @mobile {
-        margin-bottom: 20px;
-        padding-left: 10%;
-      }//media
+    //   @media @mobile {
+    //     margin-bottom: 20px;
+    //     padding-left: 10%;
+    //   }//media
 
-    }// h1
-  
-    nav {
-        padding-right: 2%;
-        margin-right: 21%;
+    // }// h1
 
-        @media @mobile {
-            // border: 1px solid green;
-            display: flex;
-            // padding-right: 15%;
-            // padding-left: 15%;
-            width: 92vw;
-            margin-right: 0;
-            justify-content: space-between;
-        }//this is the closing media tag for the media inside the nav
 
-        a {
-        margin-left: 20px;
-        font-size: 1.8rem;
-        color: black;
-        text-decoration: none;
+nav{
+  height:13vh;  
+  width: 100%;
+  background : #DEE58D;
+  //z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  .logo img{
+    max-height: 100%;
+  }
+
+  .nav-items{
+    width: 40%;
+    color:#4060A1;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+    }
+    .home{
+      background-color: #EBB3B8;
+      padding: .7rem;
+      //border: 1px solid #EBB3B8;
+    }
+  }   
+}
+
+
+    
+    
         
 
-        @media @mobile {
-            display: flex;
-            // border: 1px solid black;
-         }//this is the closing tag for the mobile inside the nav
-        }//this is the closing tag for the a inside the nav
+    //     @media @mobile {
+    //         display: flex;
+    //         // border: 1px solid black;
+    //      }//this is the closing tag for the mobile inside the nav
+    //     }//this is the closing tag for the a inside the nav
 
     // .first-anchor {
     //   margin-left: 0;
-    // }
-    }// nav
-}// header
+
+

@@ -108,6 +108,9 @@ footer .languages ul li a {
 .top-content {
   border: 2px solid #C0C0C0;
   text-align: center;
+  width: 100%;
+  background-image: url("../imgs/food.jpg");
+  padding-bottom: 80%;
 }
 @media (max-width: 500px) {
   .top-content {
@@ -123,6 +126,7 @@ footer .languages ul li a {
   font-size: 4rem;
 }
 .middle-content {
+  text-align: center;
   border: 2px solid #C0C0C0;
 }
 .middle-content h2 {
@@ -135,6 +139,16 @@ footer .languages ul li a {
   padding-right: 5%;
   margin-right: 10%;
   margin-left: 10%;
+}
+.middle-content img {
+  margin-right: -1%;
+}
+.nutrients-chart {
+  text-align: center;
+  font-size: 3rem;
+}
+.nutrients-chart img {
+  width: 30%;
 }
 .myplate-section {
   text-align: center;

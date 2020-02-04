@@ -154,6 +154,15 @@ footer .languages ul li a {
   list-style: none;
   margin-top: 2%;
 }
+.tokens {
+  text-align: center;
+}
+.tokens img {
+  width: 50%;
+}
+.chart {
+  width: 110%;
+}
 .about-Gigapet {
   background-image: url(../imgs/zoo.jpg);
 }

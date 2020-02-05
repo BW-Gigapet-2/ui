@@ -301,20 +301,15 @@
   }
   .pets{
     font-size: 3.5rem;
-    width: 120%;
+    width: 100%;
     text-align: center;
-    //padding-right: 5%;
-    //margin-right: 10%;
-    //margin-left: 10%;
     margin-top: 2%;
     background-color: rgba(255,255,255, 0.3);
   }
 
-
-
   img{
     margin: 4% 0 0 0;
-    width: 30%;
+    width: 25%;
     content: url("../imgs/fox.PNG");
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -323,7 +318,7 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    border-radius: 50%;
+    //border-radius: 50%;
 
     @keyframes animate{
       0%{
@@ -349,17 +344,61 @@
 
 }
 
+
+.myplate-section{
+  text-align: center;
+  margin-bottom: 2%;
+  background-image: url("../imgs/zoo.jpg");
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img{
+    margin-top: 2%;
+    width: 80%;
+
+  }
+  .my-plate-content{
+    font-size: 3rem;
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    
+    .my-plate-p{
+      background:rgba(78,93,50, 0.90);
+    }
+  
+  
+    ul li{
+      background: rgba(222, 229, 141, 0.82);
+      text-align: center;
+      list-style: none;
+      
+    }
+  }
+}
+
+
 .nutrients-chart{
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+
+  h2{
+    width: 100%;
+    padding: 3%;
+  }
 
   .rotated{
     transform: rotate(350deg); //translateX(200px); /* Equal to rotateZ(45deg) */
     background-color: @light-pink;
-    width: 35%;
+    width: 30%;
     margin-top: 3%;
     //z-index: 1;
     //margin-left: 20%;
@@ -371,40 +410,7 @@
   }
 }
 
-.myplate-section{
-  text-align: center;
-  margin-bottom: 2%;
 
-  img{
-    width: 30%;
-
-  }
-
-
-
-  .my-plate-content{
-    
-    font-size: 3rem;
-    margin-right: 15%;
-    margin-left: 15%;
-    .my-plate-p{
-      background:rgba(78,93,50, 0.12);
-
-      
-
-    }
-  
-  
-    ul li{
-      background: rgba(222, 229, 141, 0.52);
-      text-align: center;
-      list-style: none;
-      margin-top: 15%;
-      //margin-right: 25%;
-      //margin-left: 25%;
-    }
-  }
-}
 
 
 

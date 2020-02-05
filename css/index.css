@@ -570,6 +570,7 @@ footer .languages ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10%;
+  height: 120vh;
 }
 .middle-content h2 {
   font-size: 6rem;

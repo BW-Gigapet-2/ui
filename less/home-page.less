@@ -223,17 +223,18 @@
 
 .top-content{
   text-align: center;
-  width: 50%;
+  width: 100%;
   background-image: url("../imgs/wildPrint.PNG");
   //background-repeat: no-repeat;
   // background-position: center;
-  // background-size: cover;
+  //background-size: cover;
   // background-attachment: fixed;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: -10%;
+  margin-bottom: -5%;
   
 
   @media @mobile{
@@ -247,29 +248,33 @@
   }
 
   h1{
-    font-size: 10rem;
+    font-size: 8rem;
     background: rgba(0, 128, 0, .55);
     //color: @sienna;
-    width: 50%;
+    width: 40%;
     margin: 1% 0 0 0;
-    transform: rotated(80deg); //translateX(200px); /* Equal to rotateZ(45deg) */
+    //transform: rotated(80deg); //translateX(200px); /* Equal to rotateZ(45deg) */
     border-radius: 50%;
     padding: 8%;
   }
 
+  .happyHippo{
+    margin: -18% 60% -30% 0;
+    width: 30%;
+  }
 
   .slide-in-fwd-center {
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .why{
-    font-size: 4rem;
+    font-size: 3.5rem;
     background: white;
     text-align: center;
-    width: 45%;
+    width: 30%;
     //background-color: transparent;
-    margin: 1% 10% 0 15%;
+    margin: 5% 10% 0 15%;
     padding: 5%;
     border-radius: 50%;
     //border: 1px solid @gray;
@@ -278,6 +283,8 @@
   }
 
 }//this closes top content
+
+
 
 .middle-content{
   text-align: center;
@@ -293,18 +300,53 @@
     text-align: center;
   }
   .pets{
-    font-size: 4rem;
+    font-size: 3.5rem;
+    width: 120%;
     text-align: center;
-    padding-right: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
+    //padding-right: 5%;
+    //margin-right: 10%;
+    //margin-left: 10%;
     margin-top: 2%;
+    background-color: rgba(255,255,255, 0.3);
   }
 
+
+
   img{
-    margin-right: -1%;
-    padding: 10%;
+    margin: 4% 0 0 0;
+    width: 30%;
+    content: url("../imgs/fox.PNG");
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    border-radius: 50%;
+
+    @keyframes animate{
+      0%{
+        content: url("../imgs/elephant.PNG");
+      }
+      20%{
+        content: url("../imgs/mouse.PNG");
+      }
+      40%{
+        content: url("../imgs/cat.PNG");
+      }
+      60%{
+        content: url("../imgs/dog.PNG");
+      }
+      80%{
+        content: url("../imgs/deer.PNG");
+      }
+      100%{
+        content: url("../imgs/lion.PNG");
+      }
+    }
   }
+
 }
 
 .nutrients-chart{
@@ -341,10 +383,7 @@
 
 
   .my-plate-content{
-    .text-pop-up-bottom {
-      -webkit-animation: text-pop-up-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: text-pop-up-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
+    
     font-size: 3rem;
     margin-right: 15%;
     margin-left: 15%;

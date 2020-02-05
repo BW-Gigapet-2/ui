@@ -695,7 +695,7 @@ footer .languages ul li a {
 }
 .about-us-top-section .team {
   font-size: 4rem;
-  text-align: left;
+  text-align: center;
   margin-left: 30%;
 }
 .about-us-top-section p {
@@ -712,13 +712,11 @@ footer .languages ul li a {
 .about-us-cards {
   background: #4060A1;
   width: 100%;
-  height: 220vh;
   text-align: center;
 }
 .about-us-cards .about-boxes {
   text-align: center;
   width: 100%;
-  height: 220vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -760,4 +758,40 @@ footer .languages ul li a {
 }
 .about-us-cards .about-boxes .people #me {
   width: 75%;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 8rem;
+  background: #DEE58D;
+}
+footer img {
+  margin: 1%;
+}
+footer .social-media {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-media a {
+  display: flex;
+  justify-content: space-between;
+  width: 2%;
+  margin-bottom: 1%;
+  text-decoration: none;
+  color: #212529;
+  font-size: 2rem;
+}
+footer .social-media a img {
+  width: 70%;
+}
+footer .social-media #contact-us {
+  width: 5%;
+  background: #6664AD;
+  padding: 0.3%;
+  border-radius: 3rem;
+}
+footer .social-media #contact-us:hover {
+  background: #4060A1;
 }

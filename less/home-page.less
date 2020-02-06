@@ -257,7 +257,7 @@
   }
 
   .happyHippo{
-    margin: -22% 60% -40% 0;
+    margin: -22% 60% -40% 20%;
     width: 30%;
   }
 
@@ -273,7 +273,7 @@
     text-align: center;
     width: 40%;
     background-color: @light-pink;
-    margin: -4% 0 0 35%;
+    margin: -4% 10% 0 35%;
     padding: 2%;
     .radius();
     //border: 1px solid @gray;
@@ -289,29 +289,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
-  display: flex;
-  flex-wrap: wrap;
+  height: 80vh;
   width: 100%;
 
   h2{
     width: 100%;
     font-size: 5rem;
-    margin: 6rem 0 -10rem 25rem;
+    margin: 6rem 0 0 0;
+    padding-top: 2%;
   }
-  .pets{
-    font-size: 3rem;
-    width: 50%;
-    text-align: center;
-    line-height: 4rem;
-    margin: 5% -20% 0 25%;
-    background-color: rgba(255,255,255, 0.3);
-    padding: 2%;
-    .radius();
-  }  
 
-  img{
-    margin: 60% 0 0 -90%;
+  .pet-info-graphics-cont{
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+
+  .rotating-imgs{
+    margin: 20% 0 0 450%;
     content: url("../imgs/fox.PNG");
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -321,66 +315,97 @@
     animation-play-state: running;
     animation-timing-function: ease-in-out;
     .radius();
+    width: 100%;
     
 
     @keyframes animate{
       0%{
         content: url("../imgs/elephant.PNG");
+        //width: 100%;
       }
       20%{
         content: url("../imgs/mouse.PNG");
+        //width: 70%;
       }
       40%{
         content: url("../imgs/cat.PNG");
+        //width: 70%;
       }
       60%{
         content: url("../imgs/dog.PNG");
+        //width: 70%;
       }
       80%{
         content: url("../imgs/deer.PNG");
+        //width: 70%;
       }
       100%{
         content: url("../imgs/lion.PNG");
+        //width: 30%; //mess with the width on this to see cool effects from fading in/out
       }
     }
   }
+  .pets{
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+    line-height: 3rem;
+    margin: 20% 0 0 10%;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 2%;
+    .radius();
+  }  
+
+  .upside-down-Ele{
+    width: 120%;
+    margin: -34% 0 0 31%;
+    .upsideDown{
+      width: 150%;
+    }
+  }
 }
+}//pretty difficult time getting content and hippo pic on same line
 
 
 
 .myplate-section{
-
+  background-image: url("../imgs/zoo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   .my-plate-container{
     text-align: center;
+    .suggestions{
+      h2{
+        width: 100%;
+        font-size:5rem;
+        background-color: rgba(255,255,255, 0.8);
+        margin: 0 0 0 0;
+        padding: 2%;
+        .radius();
+      }
+    }
+    .plate-info{
+      display: flex;
+      img{
+        margin: 1% 0 0 40%;
+        width: 50%;
+        .radius();
+      }
     
-    background-image: url("../imgs/zoo.jpg");
-    background-attachment: fixed;
-    display: flex;
-    justify-content: space-between;
+      .my-plate-p{
+        background:rgba(78,93,50, 0.90);
+        color: @white;
+        .radius();
+        padding: 5rem;
+        width: 50%;
+        font-size: 3rem;
+        margin: 5% 20% 8% -4%;
+      }
+
+    }
     
-    h2{
-      width: 60%;
-      font-size:5.5rem;
-      background-color: rgba(255,255,255, 0.8);
-      margin: 5% 0 10% 20%;
-      padding: 2%;
-      .radius();
-    }
-  
-    img{
-      margin: 10% 25% 0 0;
-      width: 90%;
-      .radius();
-    }
-  
-    .my-plate-p{
-      background:rgba(78,93,50, 0.90);
-      .radius();
-      padding: 2rem;
-      width: 40%;
-      font-size: 3rem;
-      margin: 5% 5% 8% 0;
-    }
   }
 }
 
@@ -394,34 +419,40 @@
   width: 100%;
   flex-wrap: wrap;
   background-color: rgba(222, 229, 141, 0.32);
+  
 
   .features{
     width: 100%;
     font-size: 5rem;
     margin-top: 2%;
-    
-    p{
-      font-family: @header-elements;
+
+    h2{
+      width: 100%;
+      padding: 1%;
     }
+    h3{
+      padding: 1%;
+    }
+  
   }
-
-  h2{
-    width: 100%;
-    padding: 3%;
-  }
-
   .rotated{
     transform: rotate(350deg); //translateX(200px); /* Equal to rotateZ(45deg) */
     background-color: @light-pink;
     width: 30%;
-    margin-top: 6%;
+    margin-top: 5%;
+    .radius();
     //z-index: 1;
-    //margin-left: 20%;
+    margin-left: 3%;
   }
 
-  .tom-rotated{
+  .egg-rotated{
     width: 25%;
-    transform: rotate(40deg);
+    margin-left: -30%;
+    margin-top: 6%;
+    transform: rotate(25deg);
+    img{
+    .radius();
+    }
   }
 }
 
@@ -436,25 +467,76 @@
   .tokens-section{
     text-align: center;
     background-color: @light-pink;
-    img{
-      width: 60%;
-      margin: 1% 4% 1% 4%;
+    display: flex;
+    padding: 6%;
+    height: 65vh;
+
+    .owl{
+      width: 30%;
+      margin-top: 2%;
+      margin-left: 4%;
       .radius();
+      img{
+        width: 100%;
+        .radius();
+        //margin-right: 4%;
+      }
+      
     }
 
-    .tokens-p{
-      width: 100%;
-      background-color: rgba(255,255,255, 0.8);
-      font-size: 3rem;
-      line-height: 6rem;
-      text-align: center;
+    .tokens{
+    content: url("../imgs/aquaTok.PNG");
+    animation-name: animate2;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    .radius();
+    width: 30%;
+        
+    @keyframes animate2{
+      0%{
+      content: url("../imgs/aquaNB.png");
+      }
+      20%{
+      content: url("../imgs/redTok.PNG");
+      }
+      40%{
+      content: url("../imgs/yellowTok.PNG");
+      }
+      60%{
+      content: url("../imgs/greenTok.PNG");
+      }
+      80%{
+      content: url("../imgs/greyedTok.PNG");
+      }
+      100%{
+      content: url("../imgs/greyTokFork.PNG");
+      }
     }
   }
+  .tokens-p{
+    width: 60%;
+    background-color: rgba(255,255,255, 0.8);
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 2%;
+    padding: 1%;
+    .radius();
+  }
+}
 
+
+    
 //chart section
 
 .chart{
   width: 110%;
+  
 }
 
 

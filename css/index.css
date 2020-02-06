@@ -531,7 +531,7 @@ footer .languages ul li a {
   text-align: center;
   width: 100%;
   background-image: url("../imgs/wildPrint.PNG");
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -546,12 +546,14 @@ footer .languages ul li a {
   font-size: 8rem;
   background: #4e5d32;
   width: 100%;
-  margin: 1% 1% 0 1%;
-  padding: 7%;
+  margin: 1% 20% 0 22%;
+  border-radius: 50%;
+  padding: 5%;
 }
 .top-content .happyHippo {
-  margin: -22% 60% -40% 20%;
-  width: 30%;
+  margin: -25% 60% -40% 20%;
+  width: 100%;
+  height: 100%;
 }
 .top-content .slide-in-fwd-center {
   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -561,9 +563,10 @@ footer .languages ul li a {
   font-size: 3.5rem;
   background: white;
   text-align: center;
-  width: 40%;
+  width: 45%;
   background-color: #EBB3B8;
-  margin: -4% 10% 0 35%;
+  margin: -6% 10% 0 11%;
+  line-height: 110%;
   padding: 2%;
   border-radius: 2rem;
 }
@@ -621,17 +624,17 @@ footer .languages ul li a {
 }
 .middle-content .pet-info-graphics-cont .pets {
   font-size: 3rem;
-  width: 80%;
+  width: 95%;
   text-align: center;
   line-height: 3rem;
-  margin: -1% 0 0 45%;
+  margin: -1% 0 0 75%;
   background-color: #EBB3B8;
   padding: 2%;
   border-radius: 2rem;
 }
 .middle-content .pet-info-graphics-cont .upside-down-Ele {
   width: 120%;
-  margin: -20% 0 0 -20%;
+  margin: -15% 0 0 0;
 }
 .middle-content .pet-info-graphics-cont .upside-down-Ele .upsideDown {
   width: 150%;
@@ -671,6 +674,10 @@ footer .languages ul li a {
   font-size: 3rem;
   margin: 5% 20% 8% -4%;
 }
+.more-hippo img {
+  width: 15%;
+  margin-left: 13%;
+}
 .testimonials {
   width: 100%;
   height: 95vh;
@@ -679,7 +686,7 @@ footer .languages ul li a {
 .testimonials .test-head h2 {
   font-size: 8rem;
   width: 100%;
-  padding: 4% 4% 2% 4%;
+  padding: 0 4% 2% 4%;
 }
 .testimonials img {
   width: 30%;

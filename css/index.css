@@ -544,10 +544,9 @@ footer .languages ul li a {
 }
 .top-content h1 {
   font-size: 8rem;
-  background: rgba(0, 128, 0, 0.55);
+  background: #4e5d32;
   width: 100%;
   margin: 1% 1% 0 1%;
-  border-radius: 50%;
   padding: 7%;
 }
 .top-content .happyHippo {
@@ -575,7 +574,7 @@ footer .languages ul li a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 40vh;
   width: 100%;
 }
 .middle-content h2 {
@@ -584,14 +583,10 @@ footer .languages ul li a {
   margin: 6rem 0 0 0;
   padding-top: 2%;
 }
-.middle-content .pet-info-graphics-cont {
-  display: flex;
-  flex-wrap: wrap;
-}
-.middle-content .pet-info-graphics-cont .rotating-imgs {
-  margin: 20% 0 0 450%;
+.middle-content .rotating-imgs {
+  margin: 2% 0 0 0;
   content: url("../imgs/fox.PNG");
-  animation-name: animate;
+  animation-name: animate1;
   animation-direction: alternate-reverse;
   animation-duration: 20s;
   animation-fill-mode: forwards;
@@ -599,9 +594,9 @@ footer .languages ul li a {
   animation-play-state: running;
   animation-timing-function: ease-in-out;
   border-radius: 2rem;
-  width: 100%;
+  width: 10%;
 }
-@keyframes animate {
+@keyframes animate1 {
   0% {
     content: url("../imgs/elephant.PNG");
   }
@@ -621,19 +616,22 @@ footer .languages ul li a {
     content: url("../imgs/lion.PNG");
   }
 }
+.middle-content .pet-info-graphics-cont {
+  display: flex;
+}
 .middle-content .pet-info-graphics-cont .pets {
   font-size: 3rem;
-  width: 60%;
+  width: 80%;
   text-align: center;
   line-height: 3rem;
-  margin: 20% 0 0 10%;
-  background-color: rgba(255, 255, 255, 0.3);
+  margin: -1% 0 0 45%;
+  background-color: #EBB3B8;
   padding: 2%;
   border-radius: 2rem;
 }
 .middle-content .pet-info-graphics-cont .upside-down-Ele {
   width: 120%;
-  margin: -34% 0 0 31%;
+  margin: -20% 0 0 -20%;
 }
 .middle-content .pet-info-graphics-cont .upside-down-Ele .upsideDown {
   width: 150%;
@@ -651,9 +649,9 @@ footer .languages ul li a {
 .myplate-section .my-plate-container .suggestions h2 {
   width: 100%;
   font-size: 5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
   margin: 0 0 0 0;
-  padding: 2%;
+  padding: 1%;
   border-radius: 2rem;
 }
 .myplate-section .my-plate-container .plate-info {
@@ -665,7 +663,7 @@ footer .languages ul li a {
   border-radius: 2rem;
 }
 .myplate-section .my-plate-container .plate-info .my-plate-p {
-  background: rgba(78, 93, 50, 0.9);
+  background: #4e5d32;
   color: #ffffff;
   border-radius: 2rem;
   padding: 5rem;

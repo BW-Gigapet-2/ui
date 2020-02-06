@@ -249,10 +249,10 @@
 
   h1{
     font-size: 8rem;
-    background: rgba(0, 128, 0, .55);
+    background: @dark-olive-green;
     width: 100%;
     margin: 1% 1% 0 1%;
-    border-radius: 50%;
+    //border-radius: 30%;
     padding: 7%;
   }
 
@@ -289,9 +289,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 40vh;
   width: 100%;
-
   h2{
     width: 100%;
     font-size: 5rem;
@@ -299,15 +298,10 @@
     padding-top: 2%;
   }
 
-  .pet-info-graphics-cont{
-  display: flex;
-  flex-wrap: wrap;
-  //justify-content: center;
-
   .rotating-imgs{
-    margin: 20% 0 0 450%;
+    margin: 2% 0 0 0;
     content: url("../imgs/fox.PNG");
-    animation-name: animate;
+    animation-name: animate1;
     animation-direction: alternate-reverse;
     animation-duration: 20s;
     animation-fill-mode: forwards;
@@ -315,10 +309,8 @@
     animation-play-state: running;
     animation-timing-function: ease-in-out;
     .radius();
-    width: 100%;
-    
-
-    @keyframes animate{
+    width: 10%;
+    @keyframes animate1{
       0%{
         content: url("../imgs/elephant.PNG");
         //width: 100%;
@@ -345,25 +337,29 @@
       }
     }
   }
+  .pet-info-graphics-cont{
+    display: flex;
+    //justify-content: center;
+  
   .pets{
     font-size: 3rem;
-    width: 60%;
+    width: 80%;
     text-align: center;
     line-height: 3rem;
-    margin: 20% 0 0 10%;
-    background-color: rgba(255,255,255, 0.3);
+    margin: -1% 0 0 45%;
+    background-color: @light-pink;
     padding: 2%;
     .radius();
   }  
-
-  .upside-down-Ele{
+  
+    .upside-down-Ele{
     width: 120%;
-    margin: -34% 0 0 31%;
-    .upsideDown{
-      width: 150%;
+    margin: -20% 0 0 -20%;
+      .upsideDown{
+        width: 150%;
+      }
     }
   }
-}
 }//pretty difficult time getting content and hippo pic on same line
 
 
@@ -380,9 +376,9 @@
       h2{
         width: 100%;
         font-size:5rem;
-        background-color: rgba(255,255,255, 0.8);
+        background-color: @white;
         margin: 0 0 0 0;
-        padding: 2%;
+        padding: 1%;
         .radius();
       }
     }
@@ -395,7 +391,7 @@
       }
     
       .my-plate-p{
-        background:rgba(78,93,50, 0.90);
+        background: @dark-olive-green;
         color: @white;
         .radius();
         padding: 5rem;
@@ -480,8 +476,7 @@
         width: 100%;
         .radius();
         //margin-right: 4%;
-      }
-      
+      } 
     }
 
     .tokens{

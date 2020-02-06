@@ -234,7 +234,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: -5%;
+  margin-bottom: -10%;
   
 
   @media @mobile{
@@ -250,17 +250,18 @@
   h1{
     font-size: 8rem;
     background: rgba(0, 128, 0, .55);
-    //color: @sienna;
-    width: 40%;
-    margin: 1% 0 0 0;
-    //transform: rotated(80deg); //translateX(200px); /* Equal to rotateZ(45deg) */
+    width: 100%;
+    margin: 1% 1% 0 1%;
     border-radius: 50%;
-    padding: 8%;
+    padding: 7%;
   }
 
   .happyHippo{
-    margin: -18% 60% -30% 0;
+    margin: -22% 60% -40% 0;
     width: 30%;
+    img{
+      .radius();
+    }
   }
 
   .slide-in-fwd-center {
@@ -272,11 +273,11 @@
     font-size: 3.5rem;
     background: white;
     text-align: center;
-    width: 30%;
+    width: 50%;
     //background-color: transparent;
-    margin: 5% 10% 0 15%;
-    padding: 5%;
-    border-radius: 50%;
+    margin: -4% 0 0 35%;
+    padding: 2%;
+    .radius();
     //border: 1px solid @gray;
 
     
@@ -293,25 +294,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
-  height: 120vh;
-  
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
   h2{
-    font-size: 6rem;
-    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    margin: 6rem 0 -10rem 25rem;
   }
   .pets{
     font-size: 3.5rem;
-    width: 100%;
+    width: 50%;
     text-align: center;
-    margin-top: 2%;
+    margin: 2% -20% 0 25%;
     background-color: rgba(255,255,255, 0.3);
-  }
+    .radius();
+  }  
 
   img{
-    margin: 4% 0 0 0;
-    width: 25%;
+    margin: 6rem 0 0 -300%;
     content: url("../imgs/fox.PNG");
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -320,7 +323,7 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    //border-radius: 50%;
+    
 
     @keyframes animate{
       0%{
@@ -343,8 +346,8 @@
       }
     }
   }
-
 }
+
 
 
 .myplate-section{
@@ -353,7 +356,7 @@
   background-image: url("../imgs/zoo.jpg");
   background-attachment: fixed;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: center;
   
 
@@ -368,10 +371,13 @@
     margin-left: 15%;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 30%;
     
     .my-plate-p{
       background:rgba(78,93,50, 0.90);
+      margin: 2rem;
+      .radius();
+      padding: 2rem;
     }
   
   

@@ -234,7 +234,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: -5%;
+  margin-bottom: -10%;
   
 
   @media @mobile{
@@ -250,18 +250,17 @@
   h1{
     font-size: 8rem;
     background: rgba(0, 128, 0, .55);
-    //color: @sienna;
-    width: 40%;
-    margin: 1% 0 0 0;
-    //transform: rotated(80deg); //translateX(200px); /* Equal to rotateZ(45deg) */
+    width: 100%;
+    margin: 1% 1% 0 1%;
     border-radius: 50%;
-    padding: 8%;
+    padding: 7%;
   }
 
   .happyHippo{
-    margin: -18% 60% -30% 0;
+    margin: -22% 60% -40% 0;
     width: 30%;
   }
+
 
   .slide-in-fwd-center {
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -272,16 +271,13 @@
     font-size: 3.5rem;
     background: white;
     text-align: center;
-    width: 30%;
-    //background-color: transparent;
-    margin: 5% 10% 0 15%;
-    padding: 5%;
-    border-radius: 50%;
+    width: 40%;
+    background-color: @light-pink;
+    margin: -4% 0 0 35%;
+    padding: 2%;
+    .radius();
     //border: 1px solid @gray;
-
-    
   }
-
 }//this closes top content
 
 
@@ -293,25 +289,29 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
-  height: 120vh;
-  
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
   h2{
-    font-size: 6rem;
-    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    margin: 6rem 0 -10rem 25rem;
   }
   .pets{
-    font-size: 3.5rem;
-    width: 100%;
+    font-size: 3rem;
+    width: 50%;
     text-align: center;
-    margin-top: 2%;
+    line-height: 4rem;
+    margin: 5% -20% 0 25%;
     background-color: rgba(255,255,255, 0.3);
-  }
+    padding: 2%;
+    .radius();
+  }  
 
   img{
-    margin: 4% 0 0 0;
-    width: 25%;
+    margin: 60% 0 0 -90%;
     content: url("../imgs/fox.PNG");
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -320,7 +320,8 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    //border-radius: 50%;
+    .radius();
+    
 
     @keyframes animate{
       0%{
@@ -343,43 +344,42 @@
       }
     }
   }
-
 }
 
 
+
 .myplate-section{
-  text-align: center;
-  margin-bottom: 2%;
-  background-image: url("../imgs/zoo.jpg");
-  background-attachment: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
 
-  img{
-    margin-top: 2%;
-    width: 80%;
-
-  }
-  .my-plate-content{
-    font-size: 3rem;
-    margin-right: 15%;
-    margin-left: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
+  .my-plate-container{
+    text-align: center;
     
-    .my-plate-p{
-      background:rgba(78,93,50, 0.90);
+    background-image: url("../imgs/zoo.jpg");
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    
+    h2{
+      width: 60%;
+      font-size:5.5rem;
+      background-color: rgba(255,255,255, 0.8);
+      margin: 5% 0 10% 20%;
+      padding: 2%;
+      .radius();
     }
   
+    img{
+      margin: 10% 25% 0 0;
+      width: 90%;
+      .radius();
+    }
   
-    ul li{
-      background: rgba(222, 229, 141, 0.82);
-      text-align: center;
-      list-style: none;
-      
+    .my-plate-p{
+      background:rgba(78,93,50, 0.90);
+      .radius();
+      padding: 2rem;
+      width: 40%;
+      font-size: 3rem;
+      margin: 5% 5% 8% 0;
     }
   }
 }
@@ -392,6 +392,18 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(222, 229, 141, 0.32);
+
+  .features{
+    width: 100%;
+    font-size: 5rem;
+    margin-top: 2%;
+    
+    p{
+      font-family: @header-elements;
+    }
+  }
 
   h2{
     width: 100%;
@@ -402,7 +414,7 @@
     transform: rotate(350deg); //translateX(200px); /* Equal to rotateZ(45deg) */
     background-color: @light-pink;
     width: 30%;
-    margin-top: 3%;
+    margin-top: 6%;
     //z-index: 1;
     //margin-left: 20%;
   }
@@ -421,10 +433,21 @@
 
 //tokens section
 
-  .tokens{
+  .tokens-section{
     text-align: center;
+    background-color: @light-pink;
     img{
-      width: 50%;
+      width: 60%;
+      margin: 1% 4% 1% 4%;
+      .radius();
+    }
+
+    .tokens-p{
+      width: 100%;
+      background-color: rgba(255,255,255, 0.8);
+      font-size: 3rem;
+      line-height: 6rem;
+      text-align: center;
     }
   }
 

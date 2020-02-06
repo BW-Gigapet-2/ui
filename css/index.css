@@ -265,6 +265,7 @@ nav .nav-items a {
 nav .nav-items .home {
   background-color: #EBB3B8;
   padding: 0.7rem;
+  border-radius: 2rem;
 }
 nav .nav-items .heartbeat {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -277,6 +278,9 @@ footer {
 }
 footer img {
   margin: 1%;
+}
+footer .apple {
+  width: 8.5%;
 }
 footer .social-media {
   display: flex;
@@ -549,9 +553,6 @@ footer .languages ul li a {
   margin: -22% 60% -40% 0;
   width: 30%;
 }
-.top-content .happyHippo img {
-  border-radius: 2rem;
-}
 .top-content .slide-in-fwd-center {
   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -560,7 +561,8 @@ footer .languages ul li a {
   font-size: 3.5rem;
   background: white;
   text-align: center;
-  width: 50%;
+  width: 40%;
+  background-color: #EBB3B8;
   margin: -4% 0 0 35%;
   padding: 2%;
   border-radius: 2rem;
@@ -583,15 +585,17 @@ footer .languages ul li a {
   margin: 6rem 0 -10rem 25rem;
 }
 .middle-content .pets {
-  font-size: 3.5rem;
+  font-size: 3rem;
   width: 50%;
   text-align: center;
-  margin: 2% -20% 0 25%;
+  line-height: 4rem;
+  margin: 5% -20% 0 25%;
   background-color: rgba(255, 255, 255, 0.3);
+  padding: 2%;
   border-radius: 2rem;
 }
 .middle-content img {
-  margin: 6rem 0 0 -300%;
+  margin: 60% 0 0 -90%;
   content: url("../imgs/fox.PNG");
   animation-name: animate;
   animation-direction: alternate-reverse;
@@ -600,6 +604,7 @@ footer .languages ul li a {
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-timing-function: ease-in-out;
+  border-radius: 2rem;
 }
 @keyframes animate {
   0% {
@@ -621,36 +626,33 @@ footer .languages ul li a {
     content: url("../imgs/lion.PNG");
   }
 }
-.myplate-section {
+.myplate-section .my-plate-container {
   text-align: center;
-  margin-bottom: 2%;
   background-image: url("../imgs/zoo.jpg");
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.myplate-section img {
-  margin-top: 2%;
-  width: 80%;
+.myplate-section .my-plate-container h2 {
+  width: 60%;
+  font-size: 5.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 5% 0 10% 20%;
+  padding: 2%;
+  border-radius: 2rem;
 }
-.myplate-section .my-plate-content {
-  font-size: 3rem;
-  margin-right: 15%;
-  margin-left: 15%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
+.myplate-section .my-plate-container img {
+  margin: 10% 25% 0 0;
+  width: 90%;
+  border-radius: 2rem;
 }
-.myplate-section .my-plate-content .my-plate-p {
+.myplate-section .my-plate-container .my-plate-p {
   background: rgba(78, 93, 50, 0.9);
-  margin: 2rem;
   border-radius: 2rem;
   padding: 2rem;
-}
-.myplate-section .my-plate-content ul li {
-  background: rgba(222, 229, 141, 0.82);
-  text-align: center;
-  list-style: none;
+  width: 40%;
+  font-size: 3rem;
+  margin: 5% 5% 8% 0;
 }
 .nutrients-chart {
   text-align: center;
@@ -659,6 +661,16 @@ footer .languages ul li a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(222, 229, 141, 0.32);
+}
+.nutrients-chart .features {
+  width: 100%;
+  font-size: 5rem;
+  margin-top: 2%;
+}
+.nutrients-chart .features p {
+  font-family: 'Bungee Shade', cursive;
 }
 .nutrients-chart h2 {
   width: 100%;
@@ -668,17 +680,27 @@ footer .languages ul li a {
   transform: rotate(350deg);
   background-color: #EBB3B8;
   width: 30%;
-  margin-top: 3%;
+  margin-top: 6%;
 }
 .nutrients-chart .tom-rotated {
   width: 25%;
   transform: rotate(40deg);
 }
-.tokens {
+.tokens-section {
   text-align: center;
+  background-color: #EBB3B8;
 }
-.tokens img {
-  width: 50%;
+.tokens-section img {
+  width: 60%;
+  margin: 1% 4% 1% 4%;
+  border-radius: 2rem;
+}
+.tokens-section .tokens-p {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 3rem;
+  line-height: 6rem;
+  text-align: center;
 }
 .chart {
   width: 110%;

@@ -1097,10 +1097,21 @@ footer .languages ul li a {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .about-us-top-section {
+    flex-direction: column;
+  }
+}
 .about-us-top-section .team {
   font-size: 4rem;
   text-align: center;
   margin-left: 30%;
+}
+@media (max-width: 500px) {
+  .about-us-top-section .team {
+    font-size: 5rem;
+    margin: auto;
+  }
 }
 .about-us-top-section p {
   font-size: 3rem;
@@ -1108,10 +1119,22 @@ footer .languages ul li a {
   padding-top: 3%;
   line-height: 150%;
 }
+@media (max-width: 500px) {
+  .about-us-top-section p {
+    margin: auto;
+    text-align: center;
+  }
+}
 .about-us-top-section img {
   width: 70%;
   padding: 10%;
   margin-left: 14%;
+}
+@media (max-width: 500px) {
+  .about-us-top-section img {
+    width: 100%;
+    margin: auto;
+  }
 }
 .about-us-cards {
   background: #4060A1;
@@ -1134,6 +1157,21 @@ footer .languages ul li a {
   border-radius: 5rem;
   height: 85rem;
 }
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people {
+    width: 48%;
+    height: 29rem;
+    margin: 1%;
+    border-radius: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people img {
+    border-radius: 2rem;
+    width: 100%;
+    padding: 2%;
+  }
+}
 .about-us-cards .about-boxes .people h2 {
   padding: 1rem;
   margin-bottom: 2rem;
@@ -1146,14 +1184,39 @@ footer .languages ul li a {
   color: #ffffff;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people h2 {
+    width: 45%;
+    margin: auto;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.4rem;
+  }
+}
 .about-us-cards .about-boxes .people h4 {
   font-size: 3rem;
   font-family: 'Poppins', sans-serif;
   margin: 2rem;
 }
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people h4 {
+    font-size: 2rem;
+    margin: auto;
+  }
+}
 .about-us-cards .about-boxes .people p {
   font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people p {
+    font-size: 1.5rem;
+    padding: 2%;
+  }
+}
+.about-us-cards .about-boxes .people #jess {
+  font-size: 1.3rem;
 }
 .about-us-cards .about-boxes .people img {
   width: 65%;

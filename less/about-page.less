@@ -25,11 +25,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media @mobile{
+        flex-direction: column;
+    }
   
     .team{
     font-size: 4rem;
     text-align: center;
     margin-left: 30%;
+
+    @media @mobile{
+        font-size: 5rem;
+        margin: auto;
+    }
+
     }
 
     p{
@@ -37,12 +47,22 @@
     margin-left: 30%;
     padding-top: 3%;
     line-height: 150%;
+
+    @media @mobile{
+        margin: auto;
+        text-align: center;
+    }
     }
 
     img{
     width: 70%;
     padding: 10%;
     margin-left: 14%;
+
+    @media @mobile{
+        width: 100%;
+        margin: auto;
+    }
     }
 }
 
@@ -72,6 +92,21 @@ text-align: center;
         border-radius: 5rem;
         height: 85rem;
 
+        @media @mobile{
+            width: 48%;
+            height: 29rem;
+            margin: 1%;
+            border-radius: 2rem;
+        }
+
+        img{
+            @media @mobile{
+                border-radius: 2rem;
+                width: 100%;
+                padding: 2%;
+            }
+        }
+
         h2{
         padding: 1rem;
         margin-bottom: 2rem;
@@ -83,17 +118,41 @@ text-align: center;
         background-color: @steel-blue;
         color: @white;
         width: 60%;
+
+        @media @mobile{
+            width: 45%;
+            margin: auto;
+            margin-top: .3rem;
+            font-size: 1rem;
+            border-radius: 1rem;
+            padding: .4rem;
+        }
+
         }
 
         h4{
         font-size: 3rem; 
         font-family: @p-elements;
-        margin: 2rem;  
+        margin: 2rem;
+        
+        @media @mobile{
+            font-size: 2rem;
+            margin: auto;
+        }
         }
 
         p{
         font-size: 2rem;
         text-align: center;
+
+        @media @mobile{
+            font-size: 1.5rem;
+            padding: 2%;
+        }
+        }
+
+        #jess{
+            font-size: 1.3rem;
         }
 
         img{
@@ -152,3 +211,119 @@ background: @khaki;
   
 }//this closes social media 
 }
+
+
+
+
+// footer {
+//     text-align: center;
+//     width: 100%;
+//     //border-top: 2px solid silver;
+//     background: @khaki;
+     
+//     img{
+//       margin: 1%;
+//       @media @mobile{
+//         //margin: 0%;
+//       }
+//      }//this gives all images inside footer a margin
+  
+//     .apple{
+//       width: 8.5%;
+//       @media @mobile{
+//         width: 42.5%;
+//       }
+//     }
+  
+//      .social-media{
+//        display: flex;
+//        width: 100%;
+//        justify-content: center;
+//        align-items: center;
+  
+//        @media @mobile{
+//         justify-content: space-between;
+//         padding: 4%;
+//        }
+  
+  
+//        a {
+//          display: flex;
+//          justify-content: space-between;
+//          width: 2.5%;
+//          margin-bottom: 1%;
+//          text-decoration: none;
+//          color: @black;
+//          font-size: 2rem;
+  
+//          @media @mobile{
+//            //width: 60%;
+//            width: 60%;
+//            //ustify-content: space-between;
+//          }
+  
+         
+//         img{
+//          width: 70%;
+  
+//          @media @mobile{
+//            display:none;
+//            height: 8vh;
+//            width: auto;
+//          }
+//         }//this closes images inside social media class
+  
+//       }//closing a tag
+  
+//       #contact-us{
+//         width: 60%;
+//         background: @slate-blue;
+//         border-radius: 3rem;
+//         font-size: 1.7rem;
+  
+//         @media @mobile{
+//           display: none;
+//         }
+//       }//closing contact-us
+  
+//       #contact-us:hover{
+//         background: @steel-blue;
+//         @media @mobile{
+//           background: none;
+//         }
+//       }//closing contact-us for hover (remember that with media queries I'll need &
+  
+//     }//this closes social media 
+  
+//     .credit{
+//       @media @mobile{
+//         margin-top: 3%;
+//       }
+//     }
+//     .copyright{
+//       @media @mobile{
+//         margin-top: 3%;
+//       }
+//     }
+  
+//      .languages ul{
+//        display: flex;
+//        align-items: center;
+//        justify-content: space-evenly;
+//        margin-top: 1%;
+//        list-style: none;
+//        width: 20%;
+//        margin-left: 40%;
+  
+//        @media @mobile{
+//          width: 100%;
+//          margin: 4% 0 0 0;
+//          font-size: 1.5rem;
+//        }
+  
+//        li a{
+//          text-decoration: none;
+//          color: @black; 
+//         }//this closes a tags inside li inside languages 
+//      }//this closes ul inside languages class
+//   }//this closes footer

@@ -217,6 +217,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @mobile{
+    height: 10%;
+  }
 }//this closes parallax, used for nav items
 
 
@@ -238,13 +242,18 @@
   
 
   @media @mobile{
-  
+    height: 60%;
+    
   }//closing media inside top-content
 
 
   .bounce-in-top {
     -webkit-animation: bounce-in-top 1.1s both;
     animation: bounce-in-top 1.1s both;
+
+    // @media @mobile{
+    //   display: none;
+    // }
   }
 
   h1{
@@ -254,12 +263,24 @@
     margin: 1% 20% 0 22%;
     border-radius: 50%;
     padding: 5%;
+
+    @media @mobile{
+      width: 100%;
+      background: @dark-olive-green;
+      font-size: 5rem;
+      margin: auto;
+      .no-radius();
+    }
   }
 
   .happyHippo{
     margin: -28% 60% -40% 10%;
     width: 100%;
     height: 100%;
+
+    @media @mobile{
+      display: none;
+    }
     
   }
 
@@ -279,6 +300,12 @@
     line-height: 110%;
     padding: 2%;
     .radius();
+
+    @media @mobile{
+      width: 100%;
+      font-size: 3rem;
+      margin: 0 5% 4% 5%;
+    }
     //border: 1px solid @gray;
   }
 }//this closes top content
@@ -294,11 +321,21 @@
   background-size: cover;
   height: 40vh;
   width: 100%;
+
+  @media @mobile{
+    height: 44vh;
+  }
   h2{
     width: 100%;
     font-size: 5rem;
     margin: 6rem 0 0 0;
     padding-top: 2%;
+
+    @media @mobile{
+      font-size: 4rem;
+      margin: 0;
+      padding-top: 6%;
+    }
   }
 
   .rotating-imgs{
@@ -313,6 +350,11 @@
     animation-timing-function: ease-in-out;
     .radius();
     width: 10%;
+    @media @mobile{
+      animation-name: none;
+      width: 30%;
+      margin: 7% 0 0 0;
+    }
     @keyframes animate1{
       0%{
         content: url("../imgs/elephant.PNG");
@@ -338,11 +380,17 @@
         content: url("../imgs/lion.PNG");
         //width: 30%; //mess with the width on this to see cool effects from fading in/out
       }
+
+      
     }
   }
   .pet-info-graphics-cont{
     display: flex;
-    //justify-content: center;
+
+    @media @mobile{
+      flex-direction: column;
+      justify-content: center;
+    }
   
   .pets{
     font-size: 3rem;
@@ -353,6 +401,14 @@
     background-color: @light-pink;
     padding: 2%;
     .radius();
+
+    @media @mobile{
+      width: 100%;
+      font-size: 2rem;
+      margin: 13% 0 0 0;
+      .no-radius();
+      line-height: 2rem;
+    }
   }  
   
     .upside-down-Ele{
@@ -360,6 +416,10 @@
     margin: -15% 0 0 0;
       .upsideDown{
         width: 150%;
+      }
+
+      @media @mobile{
+        .no-display();
       }
     }
   }
@@ -383,14 +443,31 @@
         margin: 0 0 0 0;
         padding: 1%;
         .radius();
+
+        @media @mobile{
+          font-size: 4rem;
+          .no-radius();
+        }
       }
     }
     .plate-info{
       display: flex;
+
+      @media @mobile{
+        flex-direction: column;
+        justify-content: center;
+      }
+
       img{
         margin: 1% 0 0 40%;
         width: 50%;
         .radius();
+
+        @media @mobile{
+          margin: 3% 0 0 10%;
+          width: 90%;
+        }
+
       }
     
       .my-plate-p{
@@ -401,10 +478,15 @@
         width: 50%;
         font-size: 3rem;
         margin: 5% 20% 8% -4%;
-      }
 
-    }
-    
+        @media @mobile{
+          width: 100%;
+          margin: 5% 0 8% 0;
+          .no-radius();
+
+        }
+      }
+    }  
   }
 }
 
@@ -413,27 +495,49 @@
     width: 15%;
     margin-left: 13%;
   }
+
+  @media @mobile{
+    .no-display();
+  }
   
 }
 
 .testimonials{
   width: 100%;
-  height: 95vh;
+  height: 78vh;
   text-align: center;
+
+  @media @mobile{
+    height: 67vh;
+  }
   .test-head h2{
     font-size: 8rem;
     width: 100%;
     padding: 0 4% 2% 4%;
+
+    @media @mobile{
+      font-size: 4.5rem;
+      margin-top: 3%;
+    }
   }
 
   img{
     width: 30%;
+
+    @media @mobile{
+      width: 69%;
+    }
   }
   .test1{
     background-color: @sienna;
     padding: 4%;
     margin-top: 1%;
     font-size: 3rem;
+
+    @media @mobile{
+      font-size: 2.5rem;
+      margin-top: 4%;
+    }
   }
 }
 
@@ -447,6 +551,11 @@
   width: 100%;
   flex-wrap: wrap;
   background-color: rgba(222, 229, 141, 0.32);
+
+  @media @mobile{
+    flex-direction: column;
+    height: 120vh;
+  }
   
 
   .features{
@@ -454,12 +563,25 @@
     font-size: 5rem;
     margin-top: 2%;
 
+    @media @mobile{
+      font-size: 4rem;
+      margin-top: 0%;
+    }
+
     h2{
       width: 100%;
       padding: 1%;
+
+      @media @mobile{
+        font-size: 6rem;
+      }
     }
     h3{
       padding: 1%;
+      @media @mobile{
+        font-size: 2rem;
+        padding: 3% 1% 1% 1%;
+      }
     }
   
   }
@@ -471,6 +593,13 @@
     .radius();
     //z-index: 1;
     margin-left: 3%;
+
+    @media @mobile{
+      transform: none;
+      width: 80%;
+      //display: flex;
+      //flex-direction: column;
+    }
   }
 
   .egg-rotated{
@@ -480,6 +609,11 @@
     transform: rotate(25deg);
     img{
     .radius();
+    }
+    @media @mobile{
+      transform: none;
+      width: 80%;
+      margin: 0% 0% 0% 2%;
     }
   }
 }
@@ -499,6 +633,11 @@
     padding: 6%;
     height: 65vh;
 
+    @media @mobile{
+      flex-direction: column;
+      height: 120vh;
+    }
+
     .owl{
       width: 30%;
       margin-top: 2%;
@@ -509,6 +648,12 @@
         .radius();
         //margin-right: 4%;
       } 
+
+      @media @mobile{
+        width: 80%;
+        margin: 0 0 2% 12%;
+        padding: 0;
+      }
     }
 
     .tokens{
@@ -522,6 +667,12 @@
     animation-timing-function: ease-in-out;
     .radius();
     width: 30%;
+
+    @media @mobile{
+      width: 40%;
+      margin-top: 6%;
+      margin-left: 30%;
+    }
         
     @keyframes animate2{
       0%{
@@ -554,6 +705,14 @@
     margin-right: 2%;
     padding: 1%;
     .radius();
+
+    @media @mobile{
+      width: 100%;
+      line-height: 3rem;
+      .no-radius();
+      margin: 0%;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -562,7 +721,26 @@
 //chart section
 
 .chart{
-  width: 110%;
+
+  @media @mobile{
+    height: 70vh;
+  }
+  .desktop{
+    width: 110%;
+  }
+  @media @mobile{
+    display: none;
+
+  }
+
+  .mobile-image{
+    .no-display();
+
+      @media @mobile{
+        //display: block;
+        width: 100%;
+      }
+  }
 }
 
 

@@ -94,9 +94,6 @@
   }
 }
 
-    
-      
-
 
 nav{
   height:13vh;  
@@ -109,9 +106,18 @@ nav{
   display: flex;
   justify-content: space-between;
 
+  @media @mobile{
+  height: 10vh;
+  
+  }
+
   .logo img{
     max-height: 100%;
     width: 70%;
+
+    @media @mobile{
+      width: 55%;
+    }
   }
 
   .nav-items{
@@ -124,6 +130,13 @@ nav{
     letter-spacing: 2px;
     justify-content: space-around;
 
+    @media @mobile{
+      font-size: 1.6rem;
+      letter-spacing: 0px;
+      justify-content: space-around;
+      width: 100%;
+    }
+
     a {
       text-decoration: none;
       
@@ -132,6 +145,9 @@ nav{
       background-color: @light-pink;
       padding: .7rem;
       .radius();
+      @media @mobile{
+        margin-left: -15%;
+      }
     }
 
   .heartbeat {
@@ -139,9 +155,6 @@ nav{
       animation: heartbeat 1.5s ease-in-out infinite both;
       
   }
-
-
-
 
   }   
 }

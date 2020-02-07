@@ -1215,8 +1215,10 @@ footer .languages ul li a {
     padding: 2%;
   }
 }
-.about-us-cards .about-boxes .people #jess {
-  font-size: 1.3rem;
+@media (max-width: 500px) {
+  .about-us-cards .about-boxes .people #jess {
+    font-size: 1.3rem;
+  }
 }
 .about-us-cards .about-boxes .people img {
   width: 65%;

@@ -335,6 +335,9 @@ footer .social-media a {
   font-size: 2rem;
 }
 @media (max-width: 500px) {
+  footer .social-media a {
+    width: 60%;
+  }
 }
 footer .social-media a img {
   width: 70%;
@@ -342,6 +345,8 @@ footer .social-media a img {
 @media (max-width: 500px) {
   footer .social-media a img {
     display: none;
+    height: 8vh;
+    width: auto;
   }
 }
 footer .social-media #contact-us {
